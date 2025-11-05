@@ -16,8 +16,8 @@ import { createCall, createFetch } from 'file:///Users/dingming/Documents/GitHub
 import { klona } from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
 import defu, { defuFn } from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
 import { snakeCase } from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/unstorage@1.13.1_ioredis@5.4.1/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/unstorage@1.13.1_ioredis@5.4.1/node_modules/unstorage/drivers/fs.mjs';
+import { createStorage, prefixStorage } from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/unstorage@1.13.1_ioredis@5.4.1_supports-color@8.1.1_/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/unstorage@1.13.1_ioredis@5.4.1_supports-color@8.1.1_/node_modules/unstorage/drivers/fs.mjs';
 import { toRouteMatcher, createRouter } from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
 import { getContext } from 'file:///Users/dingming/Documents/GitHub/academicpage/node_modules/.pnpm/unctx@2.3.1/node_modules/unctx/dist/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
@@ -172,7 +172,7 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _TSoN6AlrM2 = (function(nitro) {
+const _2HQ0G4X5bb = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script$1}<\/script>`);
   });
@@ -197,7 +197,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _oYFP6kZquE = (nitroApp) => {
+const _s7TCoBBd6H = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -268,25 +268,25 @@ function onConsoleLog(callback) {
 
 const script = "\"use strict\";(()=>{const t=window,e=document.documentElement,c=[\"dark\",\"light\"],n=getStorageValue(\"localStorage\",\"nuxt-color-mode\")||\"system\";let i=n===\"system\"?u():n;const r=e.getAttribute(\"data-color-mode-forced\");r&&(i=r),l(i),t[\"__NUXT_COLOR_MODE__\"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.add(s):e.className+=\" \"+s,a&&e.setAttribute(\"data-\"+a,o)}function d(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,\"g\"),\"\"),a&&e.removeAttribute(\"data-\"+a)}function f(o){return t.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function u(){if(t.matchMedia&&f(\"\").media!==\"not all\"){for(const o of c)if(f(\":\"+o).matches)return o}return\"light\"}})();function getStorageValue(t,e){switch(t){case\"localStorage\":return window.localStorage.getItem(e);case\"sessionStorage\":return window.sessionStorage.getItem(e);case\"cookie\":return getCookie(e);default:return null}}function getCookie(t){const c=(\"; \"+window.document.cookie).split(\"; \"+t+\"=\");if(c.length===2)return c.pop()?.split(\";\").shift()}";
 
-const _KSCCRdCJLu = (function(nitro) {
+const _K9HcSI3VnC = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _TSoN6AlrM2,
-_oYFP6kZquE,
-_KSCCRdCJLu
+  _2HQ0G4X5bb,
+_s7TCoBBd6H,
+_K9HcSI3VnC
 ];
 
 const _lazy_6fl790 = () => Promise.resolve().then(function () { return pageview$1; });
-const _lazy_gHhXMN = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_hEwPeo = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
   { route: '/api/pageview', handler: _lazy_6fl790, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_gHhXMN, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_gHhXMN, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_hEwPeo, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_hEwPeo, lazy: true, middleware: false, method: undefined }
 ];
 
 const serverAssets = [{"baseName":"server","dir":"/Users/dingming/Documents/GitHub/academicpage/server/assets"}];
