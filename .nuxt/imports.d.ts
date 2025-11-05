@@ -41,4 +41,5 @@ export { useCount } from '../app/composables/count';
 export { useUserStore } from '../app/stores/user';
 export { defineStore, acceptHMRUpdate, usePinia, storeToRefs } from '../node_modules/.pnpm/@pinia+nuxt@0.7.0_typescript@5.7.2/node_modules/@pinia/nuxt/dist/runtime/composables';
 export { useColorMode } from '../node_modules/.pnpm/@nuxtjs+color-mode@3.5.2/node_modules/@nuxtjs/color-mode/dist/runtime/composables';
+export { useNuxtDevTools } from '../node_modules/.pnpm/@nuxt+devtools@1.6.3_vue@3.5.13/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/.pnpm/nuxt@3.14.1592_eslint@9.16.0_sass@1.82.0_typescript@5.7.2_vue-tsc@2.1.10/node_modules/nuxt/dist/pages/runtime/composables';

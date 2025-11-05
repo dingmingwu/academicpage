@@ -42,10 +42,10 @@
         <p class="gintro">The number of triangles of a streaming graph is a crucial metric with various applications, such as network evolution analysis, community detection, and anomaly detection. A practical solution for triangle counting in streaming graphs is the sampling-based approximation. Although a lot of research efforts have been devoted to the fixed-sized memory based algorithms, they suffer from the accuracy and the efficiency issues. To tackle these issues, we first propose the generalized reservoir sampling (GRS), which stores less edges for reducing the computational cost and can still generate uniformly random edge sample in the streaming graph. Then, we propose the GREAT algorithm based on GRS for efficient and accurate triangle counting estimation. To further improve the estimation accuracy, we propose the GREAT+ algorithm for considering the dynamic timestamp interval distribution in real-world streaming graphs so that triangles with short and long timestamp intervals will be sampled following the ground-truth distribution. Extensive evaluations on real datasets demonstrate the efficiency and the accuracy of our algorithms. The relative error of our algorithm GREAT+ is significantly (an order of magnitude) better than the competitors. </p>
         <div style="display: flex;" class="gimgs">
           <div class="image-container" data-text="Click to view">
-            <el-image :src="`/academicpage/image/Eorder.png`" fit="cover" alt="" class="gimg1" :preview-src-list="['/academicpage/image/dynamicinterval.png']"/>
+            <el-image :src="`/academicpage/image/dynamicinterval.png`" fit="cover" alt="" class="gimg1" :preview-src-list="['/academicpage/image/dynamicinterval.png']"/>
           </div>
           <div class="image-container" data-text="Click to view">
-            <el-image :src="`/academicpage/image/amplify_Texas.png`" fit="cover" alt="" class="gimg2" :preview-src-list="['/academicpage/image/reservoir.png']"/>
+            <el-image :src="`/academicpage/image/reservoir.png`" fit="cover" alt="" class="gimg2" :preview-src-list="['/academicpage/image/reservoir.png']"/>
           </div>
         </div>
       </div>
